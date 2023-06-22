@@ -53,10 +53,11 @@ $ python main.py
 ## Results
 Some initial results I have obtained using hyperparameters from the TextGCN paper are
 
-Dataset | F1-Weighted | Accuracy
---------|-------------|---------
-twitter_asian_prejudice | 	0.723 | 0.754
-r8_presplit | 0.962 | 0.963
-ag_presplit | 0.907 | 0.907
+Dataset | Accuracy
+--------|---------
+twitter_asian_prejudice | 0.754
+r8_presplit | 0.963
+ag_presplit | 0.907
+ag_presplit | 0.907
+fake_news | 0.846
 
-Try playing around with the hyperparameters or include your own dataset!
