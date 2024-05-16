@@ -1,12 +1,8 @@
 # Text-GCN 
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/graph-convolutional-networks-for-text/text-classification-on-r8)](https://paperswithcode.com/sota/text-classification-on-r8?p=graph-convolutional-networks-for-text)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![codebeat badge](https://codebeat.co/badges/03853262-a233-4faa-911f-e03df5eda8fa)](https://codebeat.co/projects/github-com-codekgu-text-gcn-master)
 
 A PyTorch implementation of "Graph Convolutional Networks for Text Classification." (AAAI 2019)
-
-![text_gcn](text_gcn.png)
 
 This repository contains a PyTorch implementation of 
 > Graph Convolutional Networks for Text Classification. 
@@ -26,17 +22,6 @@ This repo uses python 3.6 and the following PyTorch packages:
 - torchvision==0.4.0
 
 I also use [comet.ml](https://www.comet.ml/site/) for experiment tracking
-
-## Included Datasets
-
-The included datasets are a twitter asian prejudice [dataset](https://arxiv.org/abs/2005.03909), reuters 8, and AG's news topic classification [dataset](https://github.com/mhjabreel/CharCnn_Keras/tree/master/data/ag_news_csv).
-
-For a new dataset, prepare a `[dataset_name]_labels.txt` and `[dataset_name]_sentences.txt` in `/data/corpus` in which each line corresponds to a document and its corresponding label. 
-Use `prep_data.py` to further clean `[dataset_name]_sentences.txt`.
-The script will generate a  `[dataset_name]_sentences_clean.txt`
- 
-The following is an example of the constructed text graph for the twitter dataset. Green represents text nodes and red represents document nodes.
-![twitter text graph](https://github.com/codeKgu/text-gcn/blob/master/data/text_graphs/twitter_text_graph_nohashtag.png)
 
 ## Running the model
 
